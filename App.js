@@ -77,7 +77,6 @@ const FunComp2 = () => <h1>Single Line in Arrow Function</h1>;
 // multiple lines
 const FunComp3 = () => (
   <div id="container">
-    jsxHeading
     <h1>I am h1 tag</h1>
   </div>
 );
@@ -86,7 +85,7 @@ const FunComp3 = () => (
 
 /*********************   Component Composition   *************************** */
 
-const JsxHeading5 = () => (
+const FunComp4 = () => (
   <div id="container">
     <h1>I am h1 tag</h1>
     <FunComp />
@@ -95,22 +94,22 @@ const JsxHeading5 = () => (
   </div>
 );
 
-// root.render(<JsxHeading5 />);
+// root.render(<FunComp4 />);
 
 /*********************   React Element Inside Component   *************************** */
 
 const go = <h1>I am React Element</h1>;
 
-const JsxHeading6 = () => (
+const FunComp5 = () => (
   <div id="container">
     <h1>I am h1 tag</h1>
     {go}
   </div>
 );
 
-// root.render(<JsxHeading6 />);
+// root.render(<FunComp5 />);
 
-const JsxHeading7 = () => (
+const FunComp6 = () => (
   <div id="container">
     {go}
     <h1>I am h1 tag</h1>
@@ -118,4 +117,4 @@ const JsxHeading7 = () => (
   </div>
 );
 
-// root.render(<JsxHeading7 />);
+root.render(<FunComp6 />);
